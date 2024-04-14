@@ -203,7 +203,7 @@ def check_and_snap(tile_position, tile_angle, tile_index):
 
 
 
-position_tolerance = 50
+position_tolerance = 75
 snapped_positions = [False] * 9
 
 last_angle = None
@@ -289,7 +289,7 @@ while running:
 
                         # Define angles for open hand and palm sideways
                     OPEN_HAND_ANGLE = -90  # Adjust based on your observation
-                    LEFT_SIDEWAYS = -30  # Adjust based on your observation
+                    LEFT_SIDEWAYS = -70  # Adjust based on your observation
                     RIGHT_SIDEWAYS = -120
                     # Check sequence progress
                     if sequence_progress == 0 and np.abs(current_angle - OPEN_HAND_ANGLE) < 10:
